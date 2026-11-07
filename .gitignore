@@ -1,0 +1,16 @@
+# data & runs (per project plan: not in git)
+data/
+runs/
+untung/runs/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# artifacts too large for git
+*.pt
+*.pth
+
+# os
+.DS_Store
