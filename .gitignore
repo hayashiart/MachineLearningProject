@@ -1,16 +1,16 @@
-# data & runs (per project plan: not in git)
+# data & training intermediates (per project plan: not in git)
 data/
 runs/
-untung/runs/
+
+# deliverable weights (best.pt) ARE committed - that is the handover
+# to the server (Member B). Convention: <member>/weights/best.pt
+# (MobileNetV3 16 MB / EfficientNet-B0 ~21 MB, well under GitHub's 100 MB limit)
 
 # python
 .venv/
 __pycache__/
 *.pyc
-
-# artifacts too large for git
-*.pt
-*.pth
+.ipynb_checkpoints/
 
 # os
 .DS_Store
