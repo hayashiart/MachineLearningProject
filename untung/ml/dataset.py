@@ -42,18 +42,23 @@ def build_transforms(train: bool):
 
 
 class LeafDataset(Dataset):
-    """Reads a split file list (one relative path per line)."""
+    """Reads split file lists (one relative path per line).
+
+    `split` may join several splits with "+", e.g. "train+val+test" = all lab data.
+    """
 
     def __init__(self, split: str, transform=None, max_images: int | None = None):
-        split_file = config.SPLITS_DIR / f"{split}.txt"
-        if not split_file.is_file():
-            raise SystemExit(f"{split_file} missing - run prepare_data.py first")
+        relpaths = []
+        for name in split.split("+"):
+            split_file = config.SPLITS_DIR / f"{name}.txt"
+            if not split_file.is_file():
+                raise SystemExit(f"{split_file} missing - run prepare_data.py first")
+            relpaths += [p for p in split_file.read_text().splitlines() if p]
 
         self.classes = class_list()
         self.class_to_idx = {c: i for i, c in enumerate(self.classes)}
         self.root = config.DATA_ROOT
 
-        relpaths = split_file.read_text().splitlines()
         if max_images is not None:
             # Deterministic subset for the smoke test: spread across classes
             by_class = {}
@@ -66,7 +71,7 @@ class LeafDataset(Dataset):
 
         self.samples = [(rp, self.class_to_idx[rp.split("/", 1)[0]])
                         for rp in relpaths]
-        self.transform = transform or build_transforms(train=(split == "train"))
+        self.transform = transform or build_transforms(train=split.startswith("train"))
 
     def __len__(self):
         return len(self.samples)
@@ -81,7 +86,7 @@ def make_loader(split: str, batch_size: int = config.BATCH_SIZE,
                 shuffle: bool | None = None, max_images: int | None = None):
     ds = LeafDataset(split, max_images=max_images)
     if shuffle is None:
-        shuffle = split == "train"
+        shuffle = split.startswith("train")
     return DataLoader(
         ds, batch_size=batch_size, shuffle=shuffle,
         num_workers=config.NUM_WORKERS, persistent_workers=True,

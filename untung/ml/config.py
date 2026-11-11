@@ -18,6 +18,9 @@ REPO_ROOT = UNTUNG_DIR.parent                     # MachineLearningProject/
 
 DATA_ROOT = REPO_ROOT / "data" / "raw" / "PlantVillage-Dataset" / "raw" / "color"
 SPLITS_DIR = ML_DIR / "splits"                    # committed so all members share one split
+# Field (real-world) test set: never used for training or model selection
+FIELD_ROOT = REPO_ROOT / "data" / "raw" / "PlantDoc-Dataset"
+FIELD_MAPPING = ML_DIR / "field_mapping.json"
 RUNS_DIR = UNTUNG_DIR / "runs"                    # gitignored: checkpoints, curves, reports
 
 # ---------------------------------------------------------------- reproducibility

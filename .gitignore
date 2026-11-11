@@ -14,3 +14,8 @@ __pycache__/
 
 # os
 .DS_Store
+
+# in-domain (lab->lab) artifacts: local only, not reported
+untung/results/mobilenetv3_mps_full/
+untung/results/*/history.json
+untung/results/*/curves.png

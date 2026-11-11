@@ -11,6 +11,7 @@ training curves.
 Usage:
     python train.py                 # full run
     python train.py --smoke         # 500 images, 1 epoch - bug check
+    python train.py --full-lab      # 100% PlantVillage, no val, keep last epoch
     python train.py --device cpu    # force a device
 """
 
@@ -83,13 +84,17 @@ def run_epoch(model, loader, criterion, optimizer, device, train: bool,
 def plot_curves(history, out_path):
     fig, axes = plt.subplots(1, 3, figsize=(15, 4))
     ep = [h["epoch"] for h in history]
+    has_val = history[0]["val_loss"] is not None
 
     axes[0].plot(ep, [h["train_loss"] for h in history], label="train")
-    axes[0].plot(ep, [h["val_loss"] for h in history], label="val")
+    if has_val:
+        axes[0].plot(ep, [h["val_loss"] for h in history], label="val")
     axes[0].set_title("Loss"); axes[0].set_xlabel("epoch"); axes[0].legend()
 
-    axes[1].plot(ep, [h["val_acc"] for h in history], color="green")
-    axes[1].set_title("Validation accuracy"); axes[1].set_xlabel("epoch")
+    key = "val_acc" if has_val else "train_acc"
+    axes[1].plot(ep, [h[key] for h in history], color="green")
+    axes[1].set_title("Validation accuracy" if has_val else "Train accuracy")
+    axes[1].set_xlabel("epoch")
 
     axes[2].plot(ep, [h["lr"] for h in history], color="red")
     axes[2].set_title("Learning rate"); axes[2].set_xlabel("epoch")
@@ -103,6 +108,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--smoke", action="store_true",
                     help=f"{config.SMOKE_IMAGES} images, {config.SMOKE_EPOCHS} epoch")
+    ap.add_argument("--full-lab", action="store_true",
+                    help="train on train+val+test (all lab data); no validation, "
+                         "fixed recipe, last-epoch checkpoint")
     ap.add_argument("--device", default=None, help="cuda|mps|cpu (default: auto)")
     ap.add_argument("--batch-size", type=int, default=config.BATCH_SIZE)
     ap.add_argument("--run-name", default=None)
@@ -110,8 +118,9 @@ def main():
 
     set_seed(config.SEED)
     device = torch.device(args.device or config.pick_device())
-    run_name = args.run_name or (
-        "smoke_" if args.smoke else "mobilenetv3_mps_") + \
+    prefix = ("smoke_" if args.smoke else
+              "fulllab_mobilenetv3_mps_" if args.full_lab else "mobilenetv3_mps_")
+    run_name = args.run_name or prefix + \
         datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     run_dir = config.RUNS_DIR / run_name
     run_dir.mkdir(parents=True, exist_ok=True)
@@ -124,11 +133,17 @@ def main():
 
     # ---------------------------------------------------------------- data
     limit = config.SMOKE_IMAGES if args.smoke else None
-    train_loader = ds.make_loader("train", args.batch_size, max_images=limit)
-    val_loader = ds.make_loader("val", args.batch_size, max_images=limit)
+    train_split = "train+val+test" if args.full_lab else "train"
+    train_data = ("full PlantVillage (100%)" if args.full_lab
+                  else "PlantVillage train split (70%)")
+    train_loader = ds.make_loader(train_split, args.batch_size, max_images=limit)
+    val_loader = (None if args.full_lab else
+                  ds.make_loader("val", args.batch_size, max_images=limit))
     classes = train_loader.dataset.classes
     num_classes = len(classes)
-    print(f"train batches={len(train_loader)} | val batches={len(val_loader)} "
+    print(f"train={train_split} ({len(train_loader.dataset)} images, "
+          f"{len(train_loader)} batches) | "
+          f"val batches={len(val_loader) if val_loader else 0} "
           f"| classes={num_classes}")
 
     # ---------------------------------------------------------------- model
@@ -155,9 +170,12 @@ def main():
             tr_loss, tr_acc = run_epoch(net, train_loader, criterion,
                                         optimizer, device, train=True,
                                         tag=f"{name} {ep}/{epochs} train")
-            va_loss, va_acc = run_epoch(net, val_loader, criterion,
-                                        optimizer, device, train=False,
-                                        tag=f"{name} {ep}/{epochs} val")
+            if val_loader is not None:
+                va_loss, va_acc = run_epoch(net, val_loader, criterion,
+                                            optimizer, device, train=False,
+                                            tag=f"{name} {ep}/{epochs} val")
+            else:
+                va_loss = va_acc = None
             cur_lr = optimizer.param_groups[0]["lr"]
             scheduler.step()
             dt = time.time() - t0
@@ -169,8 +187,11 @@ def main():
                 "lr": cur_lr, "epoch_seconds": round(dt, 1),
             })
             star = ""
-            if va_acc > best_acc:
-                best_acc = va_acc
+            # Without validation the recipe is fixed up front, so the last
+            # epoch is the model: no selection on any held-out data.
+            if va_acc is None or va_acc > best_acc:
+                if va_acc is not None:
+                    best_acc = va_acc
                 torch.save({
                     "model_state_dict": net.state_dict(),
                     "classes": classes,
@@ -181,11 +202,14 @@ def main():
                     "val_acc": va_acc,
                     "epoch": len(history),
                     "device_trained_on": str(device),
+                    "train_data": train_data,
+                    "selection": "best lab val acc" if val_loader else "last epoch",
                 }, run_dir / "best.pt")
                 star = " *saved best.pt"
+            va_txt = (f"val_loss={va_loss:.4f} val_acc={va_acc:.4f}"
+                      if va_acc is not None else "no val")
             print(f"[{name} {ep}/{epochs}] train_loss={tr_loss:.4f} "
-                  f"train_acc={tr_acc:.4f} | val_loss={va_loss:.4f} "
-                  f"val_acc={va_acc:.4f} | {dt:.0f}s{star}")
+                  f"train_acc={tr_acc:.4f} | {va_txt} | {dt:.0f}s{star}")
 
     if args.smoke:
         stage("smoke", config.SMOKE_EPOCHS, config.LR_HEAD)
@@ -211,9 +235,11 @@ def main():
         "model": config.MODEL_NAME,
         "device": str(device),
         "smoke": args.smoke,
+        "train_data": train_data,
+        "train_images": len(train_loader.dataset),
         "seed": config.SEED,
         "batch_size": args.batch_size,
-        "best_val_acc": best_acc,
+        "best_val_acc": best_acc if val_loader else None,
         "total_train_seconds": round(total_s, 1),
         "epochs": len(history),
         "finished_at": datetime.now(timezone.utc).isoformat(),
@@ -221,7 +247,8 @@ def main():
     }
     (run_dir / "train_summary.json").write_text(json.dumps(summary, indent=2))
 
-    print(f"\nDone. best_val_acc={best_acc:.4f} | total {total_s/60:.1f} min")
+    print(f"\nDone. best_val_acc={best_acc if val_loader else 'n/a'} "
+          f"| total {total_s/60:.1f} min")
     print(f"Artifacts in {run_dir}")
 
 

@@ -5,28 +5,54 @@ seed 42, stratified 70/15/15), same recipe (freeze head 2 epochs lr 1e-3 →
 fine-tune 10 epochs lr 1e-4 cosine, label smoothing 0.1, AdamW, batch 64,
 float32, 224×224, ImageNet normalisation).
 
-| Metric | **MobileNetV3-Large**<br>MPS — Untung (M5 Pro, 24 GB) | **EfficientNet-B0**<br>MPS — Mustafa (M1 Pro) | **EfficientNet-B0**<br>CUDA — Sebastien |
+| Metric (field yardstick: PlantDoc, n = 2,572) | **MobileNetV3-Large**<br>MPS — Untung (M5 Pro, 24 GB) | **EfficientNet-B0**<br>MPS — Mustafa (M1 Pro) | **EfficientNet-B0**<br>CUDA — Sebastien |
 |---|---|---|---|
-| Test accuracy | **99.67 %** | TBD | TBD |
-| Macro F1 | 0.9953 | TBD | TBD |
-| Best val accuracy | 99.74 % | TBD | TBD |
+| **Field top-1** | **25.04 %** [23.40–26.75] | TBD | TBD |
+| Field top-5 | 54.94 % | TBD | TBD |
+| Field macro F1 (28 classes) | 0.2225 | TBD | TBD |
+| Crop correct | 48.06 % | TBD | TBD |
+| Healthy vs diseased | 77.45 % | TBD | TBD |
 | Parameters | 4.25 M | ~5.3 M | ~5.3 M |
 | Checkpoint size | 16.4 MB | TBD | TBD |
-| Total training time | **19.7 min** (12 ep) | TBD | TBD |
-| Train time / epoch | 34 s (frozen) → 110 s (fine-tune) | TBD | TBD |
-| Inference (batch 1) | **4.73 ms/img** | TBD | TBD |
-| Mean top-1 confidence | 0.899 | TBD | TBD |
+| Training time (lab) | 18.1 min (12 ep) | TBD | TBD |
+| Inference (batch 1) | **4.57 ms/img** | TBD | TBD |
 | torch version | 2.15.0 | TBD | TBD |
 
-Raw numbers: `results/mobilenetv3_mps_full/results.json`.
+In-domain (lab → lab) accuracy is **not** a comparison metric: on PlantVillage
+it saturates near 100 % for any modern backbone, so it cannot discriminate
+between models and rewards fitting lab artifacts. Each member keeps in-domain
+numbers in a local appendix only (mine:
+`report/experiment_log_lab_appendix.pdf`, not in git).
+
+Raw numbers: `results/lab_mobilenetv3_mps/field_results.json`.
+
+## Lab → field (train PlantVillage, test PlantDoc 2,572 images)
+
+Fill in with your own model, evaluated on the **same** field set and mapping
+(`ml/field_mapping.json`, PlantDoc `train/` + `test/`, all 28 classes).
+
+| Metric | **MobileNetV3-L** A<br>70 % lab | **MobileNetV3-L** B<br>100 % lab | **EfficientNet-B0**<br>MPS — Mustafa | **EfficientNet-B0**<br>CUDA — Sebastien |
+|---|---|---|---|---|
+| **Field top-1** | **25.04 %** | **25.43 %** | TBD | TBD |
+| 95 % CI (Wilson) | 23.40–26.75 | 23.78–27.15 | TBD | TBD |
+| Field top-5 | 54.94 % | 53.89 % | TBD | TBD |
+| Field macro F1 | 0.2225 | 0.2255 | TBD | TBD |
+| Crop correct | 48.06 % | 47.28 % | TBD | TBD |
+| Healthy vs diseased | 77.45 % | 78.97 % | TBD | TBD |
+| PlantDoc official test (n=236) | 31.78 % | 33.05 % | TBD | TBD |
+| Training time | 18.1 min | 31.5 min | TBD | TBD |
+
+A vs B: paired exact McNemar p = 0.54 → no significant difference; more lab
+data does not close the domain gap.
 
 ## Notes for the report
 
-- PlantVillage is photographed on plain backgrounds in controlled conditions, so
-  ~99.7 % test accuracy overstates real-world performance (project plan §5).
-  The real-world set (PlantDoc / phone photos) is evaluated separately by Member B.
+- PlantVillage is photographed on plain backgrounds in controlled conditions,
+  so in-domain test accuracy saturates and overstates real-world performance
+  (project plan §5); it is therefore not reported — lab → field accuracy is
+  ~25 % (tables above).
 - MobileNetV3-Large is ~20 % smaller in parameters and its batch-1 latency on
-  MPS (4.7 ms) is comfortably inside the server's budget.
+  MPS (4.6 ms) is comfortably inside the server's budget.
 - Efficiency: full training in under 20 minutes on an M5 Pro means the whole
   comparison + ablation matrix is cheap to re-run.
 

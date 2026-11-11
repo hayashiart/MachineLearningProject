@@ -1,0 +1,52 @@
+{
+  "checkpoint": "../runs/fulllab_mobilenetv3_mps/best.pt",
+  "model": "mobilenet_v3_large",
+  "train_data": "full PlantVillage (100%)",
+  "field_images": 2572,
+  "field_skipped_unreadable": 0,
+  "field_classes": 28,
+  "top1_accuracy": 0.2543,
+  "top1_correct": 654,
+  "top1_ci95_wilson": [
+    0.2378,
+    0.2715
+  ],
+  "top3_accuracy": 0.4452,
+  "top5_accuracy": 0.5389,
+  "macro_f1_field_classes": 0.2255,
+  "restricted_28way_accuracy": 0.2842,
+  "crop_accuracy": 0.4728,
+  "healthy_vs_diseased_accuracy": 0.7897,
+  "plantdoc_official_test_top1": 0.3305,
+  "plantdoc_official_test_n": 236,
+  "chance_top1_38way": 0.0263,
+  "mean_conf_correct": 0.4884,
+  "mean_conf_wrong": 0.3132,
+  "conf_threshold": 0.6,
+  "coverage_at_threshold": 0.1594,
+  "accuracy_at_threshold": 0.5341,
+  "wrong_but_confident": 191,
+  "most_predicted_classes": [
+    [
+      "Tomato___Late_blight",
+      389
+    ],
+    [
+      "Strawberry___Leaf_scorch",
+      319
+    ],
+    [
+      "Pepper,_bell___healthy",
+      300
+    ],
+    [
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      197
+    ],
+    [
+      "Squash___Powdery_mildew",
+      162
+    ]
+  ],
+  "lab_val_acc_at_save": null
+}

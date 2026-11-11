@@ -1,0 +1,12 @@
+{
+  "A": "lab_mobilenetv3_mps (70% PlantVillage)",
+  "B": "fulllab_mobilenetv3_mps (100% PlantVillage)",
+  "test": "exact McNemar (binomial on discordant pairs)",
+  "n": 2572,
+  "both_correct": 540,
+  "only_A_correct": 104,
+  "only_B_correct": 114,
+  "both_wrong": 1814,
+  "same_prediction_rate": 0.6649,
+  "mcnemar_exact_p": 0.5423
+}

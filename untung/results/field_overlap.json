@@ -1,0 +1,1179 @@
+{
+  "method": "64-bit dHash, nearest lab image, Hamming <= 6",
+  "lab_images": 54305,
+  "field_images": 2572,
+  "candidate_duplicates": 167,
+  "verification": "candidates re-checked with 64x64 grayscale pixel correlation; confirmed = corr >= 0.95",
+  "confirmed_duplicates": [],
+  "matches": [
+    {
+      "field": "train/Corn rust leaf/disease.JPG.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2439.JPG",
+      "hamming": 1,
+      "pixel_corr": 0.5614,
+      "same_class": true
+    },
+    {
+      "field": "train/Peach leaf/depositphotos_140609182-stock-photo-beauty-peach-with-leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/2e1e49f3-cca2-46dc-8f0d-96110684b7f6___YLCV_GCREC 2573.JPG",
+      "hamming": 2,
+      "pixel_corr": 0.7164,
+      "same_class": false
+    },
+    {
+      "field": "test/Peach leaf/7190f27ead55c0f6e3ff8b982972810a5446a9713a49d_1260x1260.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/c30eff89-329e-47d9-b010-0947ddc5d423___YLCV_NREC 2919.JPG",
+      "hamming": 2,
+      "pixel_corr": 0.526,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-isolated-apple-green-granny-smith-apple-with-leaf-isolated-on-white-background-60343762.jpg",
+      "lab": "Tomato___Late_blight/56fff1a0-e145-4cf8-a2e0-925d9fae1e24___GHLB Leaf 25 Day 12.JPG",
+      "hamming": 2,
+      "pixel_corr": 0.3223,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-with-leaf-isolated-on-white-with-clipping-path-494602609.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/b75dfa1f-06d0-430f-8e67-5942e3eae3e3___CREC_HLB 5632.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.8017,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-red-apple-with-leaf-138430751.jpg",
+      "lab": "Cherry_(including_sour)___Powdery_mildew/e7fe2094-95a1-40fe-ba1d-687ab0756edb___FREC_Pwd.M 0541.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.6729,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/depositphotos_56066889-stock-photo-apple-with-leaf.jpg",
+      "lab": "Cherry_(including_sour)___Powdery_mildew/90b2da87-c7d3-4369-8547-f4246836806f___FREC_Pwd.M 0575.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.6682,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-wet-fruit-with-leaf-isolated-on-white-248733745.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/5b40eefa-d914-4cd3-98a1-dd1b7c863169___YLCV_GCREC 5542.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.6572,
+      "same_class": false
+    },
+    {
+      "field": "test/Apple leaf/apple-leaf-isolated-white-background-56631026.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/210fb404-2acd-47fb-aac4-24fb372fc183___YLCV_NREC 0208.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.5752,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-with-leaf-699537772.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/65b0d07c-0e72-4ce3-8800-591136f2a78b___YLCV_NREC 2827.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.5383,
+      "same_class": false
+    },
+    {
+      "field": "train/Cherry leaf/02b13cea19417b15cf3d6ff534aa7ea653ad783094a60_1260x1260.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/56538c79-1b65-4ad7-97ac-5732cb43643e___YLCV_GCREC 2681.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.5332,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/Southern-Corn-Leaf-Blight-USDA.ashx?w=770.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/b633d977-9372-4286-9a34-792b7fae45b8___YLCV_GCREC 2622.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.4415,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/corn-short-backlit-Xanth-lesions-halos-f2.jpg",
+      "lab": "Peach___Bacterial_spot/bf787205-201b-4a69-8017-50f14f89fc28___Rut._Bact.S 0812.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.4365,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/peach-with-leaves-stock-picture-1662453.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/85830b6a-8884-45c2-b9c4-8c89f7656fa2___YLCV_NREC 2578.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.3581,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/24570793-peach-leaf.jpg",
+      "lab": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/d0df634b-a2ee-4a22-8430-8a3b0e2c68c3___RS_GLSp 7344.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.2827,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-apple-leaves-isolated-on-white-background-326520134.jpg",
+      "lab": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/7ff116fc-5095-4377-bcf1-b173f05c9e7b___RS_GLSp 7323.JPG",
+      "hamming": 3,
+      "pixel_corr": 0.2741,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf/fpls-08-01602-g001.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/db235ef9-5db9-442d-877f-6eeacf7bd14b___YLCV_GCREC 2793.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.8059,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/4633813-sweet-apple-with-leaf.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/2f7b7dfb-e41b-440e-bbf3-22e60698f7cd___CREC_HLB 7924.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.7691,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/flat,1000x1000,075,f.u2.jpg",
+      "lab": "Apple___healthy/abc9f5f6-ea98-46c0-8df7-2986969318bf___RS_HL 5928.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.7505,
+      "same_class": true
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-fresh-peach-with-green-leaf-isolated-on-white-background-548680618.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/a1399e19-7c4e-4efd-b193-4d6f2c0615a0___CREC_HLB 4384.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.7332,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/peach-with-leaf-picture-id124561113.jpg",
+      "lab": "Raspberry___healthy/12a43ab6-1f18-4b10-9fb4-4865b216d28e___Mary_HL 9156.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6953,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/stock-photo-strawberry-leaf-isolated-on-white-background-572055775.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/08b35a55-285e-4f02-a6bf-9cdf9eea5597___CREC_HLB 7485.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6879,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple Scab Leaf/Scab+close-up5846.jpg",
+      "lab": "Cherry_(including_sour)___Powdery_mildew/2030c843-fee8-4b7d-b784-faac863a658f___FREC_Pwd.M 4606.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6825,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/1534854-a-green-strawberry-leaf-isolated-on-a-white-background.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/0903aa95-6e8a-4abd-a003-126fcd9a5493___YLCV_GCREC 2806.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6733,
+      "same_class": false
+    },
+    {
+      "field": "test/Tomato Septoria leaf spot/2STEM.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/5653a459-f7bf-4c20-998f-698e8c6c9121___CREC_HLB 4383.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.647,
+      "same_class": false
+    },
+    {
+      "field": "train/Soyabean leaf/stock-photo-soy-plant-isolated-on-white-background-122414239.jpg",
+      "lab": "Tomato___Bacterial_spot/27ebdaaa-b432-4d4a-b404-a04e58a46f44___GCREC_Bact.Sp 6025.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6427,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/green-leaf-picture-id177130309?b=1&k=6&m=177130309&s=612x612&w=0&h=VP3U0AM5j0fvQqOwuI5f7cmb2Ji88mVep0eoXQaJRfs=.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/9c0c5de8-3a5a-4b8f-877a-6cab7619054a___CREC_HLB 4805.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6259,
+      "same_class": false
+    },
+    {
+      "field": "train/Bell_pepper leaf spot/image_original.jpeg?1472603885.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/35b7e85b-a3b2-4e34-96a1-cd9fd35e6c39___YLCV_NREC 2831.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6204,
+      "same_class": false
+    },
+    {
+      "field": "train/Bell_pepper leaf spot/image_1500x1500%253E.jpeg?1472603885.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/35b7e85b-a3b2-4e34-96a1-cd9fd35e6c39___YLCV_NREC 2831.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6203,
+      "same_class": false
+    },
+    {
+      "field": "test/Strawberry leaf/strawberry-leaves-isolated-white-34722259.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/af027cb0-eead-40ec-b9fc-a3178a2ced0f___YLCV_NREC 2666.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6156,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/green-leaf-apple-tree-14300049.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/4888db5e-a2a2-4ae9-a396-7ff16a32b75e___YLCV_NREC 2672.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6137,
+      "same_class": false
+    },
+    {
+      "field": "train/Bell_pepper leaf spot/pepper_V5a.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/392dc882-aab1-47e7-bd86-efc3506ce047___CREC_HLB 6571.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.6045,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-apple-leaf-isolated-on-white-background-287560226.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/9c0c5de8-3a5a-4b8f-877a-6cab7619054a___CREC_HLB 4805.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.5986,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple Scab Leaf/DSCF1248-1gz1wpc.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2480.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.5916,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-fruit-isolated-on-white-332799767.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/94255d4c-a15a-4a7d-8f20-f61c69d08242___YLCV_NREC 2929.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.5907,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/Septoria_Leaf_Spot_of_Tomato187.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2264.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.557,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/PHOTO_1333642732277.jpg",
+      "lab": "Corn_(maize)___healthy/0a68ef5a-027c-41ae-b227-159dae77d3dd___R.S_HL 7969 copy.jpg",
+      "hamming": 4,
+      "pixel_corr": 0.5567,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-apple-leaves-isolated-on-white-background-295979933.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/f8592a78-59ca-4f35-a7bf-1e4001af98a4___YLCV_GCREC 5500.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.5417,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple Scab Leaf/apple_scab.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/3dadfe9c-57ad-4242-a2d6-a5258c727a09___CREC_HLB 7878.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.5216,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/peach-leaf-white-background-40292976.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/f8592a78-59ca-4f35-a7bf-1e4001af98a4___YLCV_GCREC 5500.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.4662,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf early blight/14321627273_58d893c3e2_potato-plant.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2556.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.4128,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf late blight/14321627273_58d893c3e2_b.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2556.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.4128,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/Freckles-in-older-lesion1.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2152.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.3966,
+      "same_class": false
+    },
+    {
+      "field": "train/Soyabean leaf/stock-photo-green-soy-pods-with-leaves-and-seeds-isolated-on-white-backgraund-310996586.jpg",
+      "lab": "Peach___Bacterial_spot/3d5c02e9-c038-4f33-afa6-0da99d5006d8___Rut._Bact.S 0804.JPG",
+      "hamming": 4,
+      "pixel_corr": 0.3581,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/septorialeafspot2.jpg",
+      "lab": "Cherry_(including_sour)___healthy/8d1e7dbb-c3bf-49a2-a51e-2645017e2adb___JR_HL 9530.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.8157,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/ripe-red-apple-with-green-leaf-isolated-on-white-picture-id184640296?s=612x612.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/73aab6a1-24a1-469c-9b49-c72a2a8d7dc0___CREC_HLB 5211.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.8096,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-green-apple-leaf-clipping-path-258728936.jpg",
+      "lab": "Cherry_(including_sour)___healthy/5b5f4c1d-58d5-42d2-9802-6d471119bd8f___JR_HL 9787.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7973,
+      "same_class": false
+    },
+    {
+      "field": "test/Cherry leaf/fc729af279e9087d00bd32d89a1552a756a3ad9de7f2b_1260x1260.jpg",
+      "lab": "Blueberry___healthy/614f453c-b6e7-4a82-8e96-03ea3a976080___RS_HL 2451.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7855,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-sweet-apple-with-leaf-111143150.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/2f7b7dfb-e41b-440e-bbf3-22e60698f7cd___CREC_HLB 7924.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7523,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/depositphotos_8078382-stock-photo-strawberry-leaf.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/3bd62fc2-b89c-4a22-93d2-f8cbefa2c549___CREC_HLB 7795.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7324,
+      "same_class": false
+    },
+    {
+      "field": "test/Cherry leaf/ed12ff77ce021883de241830dee55e2e53d2c93231699_1260x1260.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/eeab3e0b-78d8-4d52-902c-3c7a78955722___YLCV_NREC 0270.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7305,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/stock-photo-leaf-strawberry-leaf-on-the-white-background-153348767.jpg",
+      "lab": "Cherry_(including_sour)___healthy/334e9c97-03ce-4ad6-96dc-16c92578d63d___JR_HL 9525.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7301,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/green-apple-leaf-slice-isolated-white-ripe-background-clipping-path-42352971.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/103620b4-b2fa-4bb5-8cff-82e88d2de34f___CREC_HLB 4183.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7219,
+      "same_class": false
+    },
+    {
+      "field": "train/grape leaf/Grape_leaf_01.jpg",
+      "lab": "Cherry_(including_sour)___Powdery_mildew/90b2da87-c7d3-4369-8547-f4246836806f___FREC_Pwd.M 0575.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.7175,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/depositphotos_45748597-stock-photo-ripe-apple-with-leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/b1bf466d-3769-4dcb-b7c1-4b7111e75516___YLCV_GCREC 5320.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.71,
+      "same_class": false
+    },
+    {
+      "field": "train/Blueberry leaf/blueberry-leaf-isolated-white-background-clipping-path-82775455.jpg",
+      "lab": "Tomato___Spider_mites Two-spotted_spider_mite/6bbc0d44-dffc-49fe-873e-9dae229ce2e4___Com.G_SpM_FL 9497.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6928,
+      "same_class": false
+    },
+    {
+      "field": "train/grape leaf/grape-leaf-19616502.jpg",
+      "lab": "Grape___Black_rot/d8c8ca0e-67a1-41dd-a1b1-8900a138dac8___FAM_B.Rot 3048.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6826,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/leaf-apple-tree-one-green-isolated-41556482.jpg",
+      "lab": "Tomato___Spider_mites Two-spotted_spider_mite/6bbc0d44-dffc-49fe-873e-9dae229ce2e4___Com.G_SpM_FL 9497.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6698,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-with-leaf-isolated-on-white-168119267.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/f8cc9e54-d484-41f0-978f-44cc661b096a___CREC_HLB 5169.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6675,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/peach-with-leaf-isolated-on-white-picture-id466696757.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/71b42ced-78a1-4442-b70d-1b3c79d054aa___CREC_HLB 6430.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.659,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/peach-leaf-isolated-white-background-39426456.jpg",
+      "lab": "Cherry_(including_sour)___healthy/8703335b-e747-4283-b57e-8467f17fa744___JR_HL 9585.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6554,
+      "same_class": false
+    },
+    {
+      "field": "test/Blueberry leaf/northern-highbush-blueberry-blue-huckleberry-vaccinium-corymbosum-EHNXRR.jpg",
+      "lab": "Cherry_(including_sour)___healthy/28dcd2d6-3ce5-447b-ac11-ef86f4e1a2f7___JR_HL 9660.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.655,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf early blight/potato-blight-leaf.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/4c787733-e1c9-46c5-bd41-6678de218dc3___CREC_HLB 7657.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.654,
+      "same_class": false
+    },
+    {
+      "field": "train/Raspberry leaf/rubus-idaeus-strigosus-le-ahaines-a.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/c86d6494-0aa6-44fe-9fa9-0c5e82b206db___YLCV_NREC 0126.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6392,
+      "same_class": false
+    },
+    {
+      "field": "test/Raspberry leaf/iron-deficiency-raspberry-leaf-chlorosis-isolated-32457798.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/656dc6e9-28e9-4d3c-b7c6-a571d4edce68___YLCV_NREC 0134.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6266,
+      "same_class": false
+    },
+    {
+      "field": "test/Cherry leaf/d7b79dbc0bca0eb3e63fbe5dfb256ccd53d90a4eb1413_1260x1260.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/c1fd6c41-2c00-498d-bb46-0ebb172b02e6___YLCV_NREC 2364.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6195,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/depositphotos_6570375-stock-photo-strawberry-leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/c438b6b2-d243-429a-b06b-9ef7e1557fb2___YLCV_GCREC 2482.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.6157,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf late blight/potato_late-blight_07_zoom.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/bfbf82fd-d9b0-464b-8786-6c5732e9c848___UF.Citrus_HLB_Lab 1282.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5943,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf late blight/600.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/c651adf2-8956-4f91-869e-23b4b1c4a623___YLCV_NREC 2821.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5919,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/depositphotos_88236122-stock-photo-peach-leaf-isolated-on-white.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/092330d8-f6e9-48df-8525-cb391b8f00b7___YLCV_GCREC 2930.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5894,
+      "same_class": false
+    },
+    {
+      "field": "test/Raspberry leaf/three-raspberry-green-leaves-isolated-white-background-62022932.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/895054c9-59f6-4f3d-bb72-ac216be117eb___YLCV_GCREC 5204.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5789,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/ripe-red-apple-with-leaf-picture-id117485645?b=1&k=6&m=117485645&s=612x612&w=0&h=Ii96HYzF-2E5ky-IcXbVhvEFvU28o0rlkwagb7T6LhY=.jpg",
+      "lab": "Cherry_(including_sour)___healthy/b02424c2-23b8-49f2-bf9d-6ebb2589457a___JR_HL 9606.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5788,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/stock-photo-strawberry-leaf-isolated-on-white-background-with-clipping-path-568145485.jpg",
+      "lab": "Strawberry___healthy/275f8963-f4f4-4903-962b-1da716725d08___RS_HL 4780.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5747,
+      "same_class": true
+    },
+    {
+      "field": "train/Cherry leaf/1b9155649757248759cdbe7d83cc94c0.jpg",
+      "lab": "Grape___Esca_(Black_Measles)/80aa474f-fb0a-4eb8-a842-a9dbf58245a1___FAM_B.Msls 3869.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5623,
+      "same_class": false
+    },
+    {
+      "field": "train/Raspberry leaf/Black%20raspberry%20late%20leaf%20rust%2008F.JPG.jpg",
+      "lab": "Tomato___Late_blight/28d8dd2a-d5d1-427c-8c58-383af4a8b2d1___GHLB2 Leaf 9041.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5612,
+      "same_class": false
+    },
+    {
+      "field": "test/Raspberry leaf/Raspberry-leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/4a4b3577-33ad-4304-a22a-1a1f458c27a7___YLCV_GCREC 2562.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5546,
+      "same_class": false
+    },
+    {
+      "field": "train/Raspberry leaf/raspberry-bush-leaves-on-a-white-background-rubi-idaei-folium-D6NDCJ.jpg",
+      "lab": "Tomato___Bacterial_spot/8491569f-a7d8-453c-86ae-c2accdc964c9___GCREC_Bact.Sp 5943.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5537,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/ncls-2016-a-shirley.jpg",
+      "lab": "Tomato___Bacterial_spot/0ab41c2e-c6fc-4ef1-9ffb-ce1b241d32be___GCREC_Bact.Sp 3426.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5421,
+      "same_class": false
+    },
+    {
+      "field": "train/Blueberry leaf/blueberry-leaf.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1863.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5369,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/strawberry-leaves-15674632.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/0fdcaef4-4723-4b4b-b81c-45f250a8ede3___YLCV_NREC 0254.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5233,
+      "same_class": false
+    },
+    {
+      "field": "train/Soyabean leaf/stock-photo-fresh-soy-leaves-isolated-on-white-224197243.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5198,
+      "same_class": false
+    },
+    {
+      "field": "test/Peach leaf/peach-leaf-isolated-white-background-42295220.jpg",
+      "lab": "Soybean___healthy/538ccfe2-1509-40d7-beae-ae7cf84e1e5d___RS_HL 3717.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5183,
+      "same_class": false
+    },
+    {
+      "field": "train/Raspberry leaf/fresh-green-raspberry-leaf-isolated-on-white-background-with-clipping-KH37NJ.jpg",
+      "lab": "Tomato___Bacterial_spot/cae55521-635e-4d8d-b67c-f178ba3f237a___GCREC_Bact.Sp 5904.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5171,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/slide21-n.jpg",
+      "lab": "Soybean___healthy/17e3e138-12b0-455e-9119-7e6b47b9fb06___RS_HL 4790.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.5041,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple rust leaf/car-apple9.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/f1517adc-da51-4886-87a1-c31ba03ed4cd___CREC_HLB 6476.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.4958,
+      "same_class": false
+    },
+    {
+      "field": "test/grape leaf/depositphotos_6898486-stock-photo-grape-leaves.jpg",
+      "lab": "Cherry_(including_sour)___healthy/1ae79bb8-c7db-4711-b9c7-3375688f750e___JR_HL 9686.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.491,
+      "same_class": false
+    },
+    {
+      "field": "test/Corn rust leaf/0796.39maizerust.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1980.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.4509,
+      "same_class": true
+    },
+    {
+      "field": "train/Tomato leaf yellow virus/virus1.jpg",
+      "lab": "Tomato___Bacterial_spot/ed72f0b8-cd69-41fd-99a8-ae792c6fa16f___GCREC_Bact.Sp 3186.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.4468,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/corn-short-backlit-Xanth-lesions-halos-f2-.jpg",
+      "lab": "Peach___Bacterial_spot/bf787205-201b-4a69-8017-50f14f89fc28___Rut._Bact.S 0812.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.4464,
+      "same_class": false
+    },
+    {
+      "field": "train/grape leaf/stock-photo-grapes-leaf-isolated-on-white-background-108448556.jpg",
+      "lab": "Tomato___Bacterial_spot/1917515d-7e2f-479c-afec-95b4d3ae07e8___GCREC_Bact.Sp 5607.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.4322,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/fresh-green-strawberry-leaf-isolated-on-white-background-with-clipping-KH37KY.jpg",
+      "lab": "Apple___healthy/a58444b0-ca47-491a-8ddb-c9ae42c26747___RS_HL 6060.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.4295,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/Slide1.preview.jpg",
+      "lab": "Tomato___Septoria_leaf_spot/9d10152c-26ee-453a-92db-33836cabdd4f___Keller.St_CG 1889.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.3236,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf late blight/late_blight_tomato_leaf5x12001-650x305.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1961.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.2928,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-apple-leaves-isolated-on-the-white-background-729570907.jpg",
+      "lab": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/c517891d-1411-4f7a-8d34-286ff2a7571f___RS_GLSp 4404.JPG",
+      "hamming": 5,
+      "pixel_corr": 0.2377,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-one-green-leaf-of-apple-tree-isolated-on-white-background-close-up-studio-photography-102522179.jpg",
+      "lab": "Apple___healthy/f17a1770-7878-4f53-a432-e93429328836___RS_HL 6090.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7792,
+      "same_class": true
+    },
+    {
+      "field": "train/Peach leaf/depositphotos_4009139-stock-photo-ripe-peach-with-leaves.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/117ed404-3f06-41d1-924a-9e39115a7f6f___CREC_HLB 5265.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7752,
+      "same_class": false
+    },
+    {
+      "field": "test/Raspberry leaf/depositphotos_1323264-Raspberry-leaf-on-white.jpg",
+      "lab": "Apple___healthy/c337df55-148e-41c6-8739-e7c87ec1b32e___RS_HL 6276.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7635,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple Scab Leaf/IMG_3455-xjgwni-1024x1024.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/cc3d7254-1d1c-45d0-a483-6396c6bc9e9e___YLCV_NREC 0174.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7537,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple rust leaf/cedar-apple-rust-gymnosporangium-juniperi-pustules-on-apple-leaf-lower-surface-X12A9H.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/9cddbb63-f605-47e8-9455-014db4355106___UF.Citrus_HLB_Lab 1196.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7413,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/red-apple-green-leaf-isolated-white-background-57496220.jpg",
+      "lab": "Blueberry___healthy/8be42030-1507-42f3-a15c-7f4058233a54___RS_HL 2406.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7371,
+      "same_class": false
+    },
+    {
+      "field": "test/Apple leaf/4120978-single-green-leaf-of-apple-tree.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/69d697bf-6fbc-4f62-a32e-4807a8aa25af___CREC_HLB 5179.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7295,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf early blight/IMG_0022.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/0dfe0a59-8266-4ca7-b93b-f25b8c550cb6___YLCV_NREC 0170.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7187,
+      "same_class": false
+    },
+    {
+      "field": "test/Apple leaf/apple-leaf-14319997.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/85830b6a-8884-45c2-b9c4-8c89f7656fa2___YLCV_NREC 2578.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7094,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-apple-tree-leaf-isolated-on-a-white-622503302.jpg",
+      "lab": "Cherry_(including_sour)___Powdery_mildew/17512756-a606-4ea5-9443-aae374a46e86___FREC_Pwd.M 0504.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7016,
+      "same_class": false
+    },
+    {
+      "field": "test/grape leaf/grape-leaf-14309623.jpg",
+      "lab": "Grape___Esca_(Black_Measles)/d66bbc39-9511-4770-8890-46330e7c75a5___FAM_B.Msls 1185.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.7001,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/depositphotos_6657863-stock-photo-single-red-apple-with-leaf.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/0ec56925-96b7-48d9-b0d6-e628bba05c92___CREC_HLB 4319.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6808,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/green-strawberry-leaf-isolated-on-white-picture-id654400974?k=6&m=654400974&s=612x612&w=0&h=x97U-8miyZxfXvAUVMbPGGj6_Lt-p35dVXiu1zuBt-Q=.jpg",
+      "lab": "Tomato___Bacterial_spot/4f239bf7-d595-404c-85af-ce41414c8ca5___GCREC_Bact.Sp 5802.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6653,
+      "same_class": false
+    },
+    {
+      "field": "train/Blueberry leaf/blueberry-leaves-safe.jpeg.jpg",
+      "lab": "Apple___healthy/a58444b0-ca47-491a-8ddb-c9ae42c26747___RS_HL 6060.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6607,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/shiny-red-apple-green-leaf-isolated-white-background-56202743.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/7eca2b80-1fa7-4a3a-8fc5-d3077770dc62___CREC_HLB 4656.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6591,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato mold leaf/119B_Tom_Mold.jpg",
+      "lab": "Apple___Cedar_apple_rust/d79cfdd6-fa8a-4a96-aa90-3c347bb9c800___FREC_C.Rust 4125.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6529,
+      "same_class": false
+    },
+    {
+      "field": "train/Raspberry leaf/12972raspberry_leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/eeab3e0b-78d8-4d52-902c-3c7a78955722___YLCV_NREC 0270.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6527,
+      "same_class": false
+    },
+    {
+      "field": "test/grape leaf/0000.jpg",
+      "lab": "Grape___Esca_(Black_Measles)/5d6ab00e-8d19-464e-b8fa-720307aebff0___FAM_B.Msls 0855.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6494,
+      "same_class": false
+    },
+    {
+      "field": "test/Potato leaf late blight/20090710-lateblight.jpg",
+      "lab": "Tomato___Late_blight/993a04d9-3bfe-4cd2-8f89-981a0bb2405c___RS_Late.B 4956.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6425,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-green-apple-leaf-isolated-on-white-with-clipping-path-195130079.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/77f04c08-8c17-4c56-b220-5c2928467336___YLCV_GCREC 2536.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6406,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/EPP-7625Fig-5-143x300.jpg",
+      "lab": "Soybean___healthy/25918c30-84e8-48e2-babc-6c0a6839348d___RS_HL 5388.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6248,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/green-strawberry-leaf-isolated-on-white-picture-id623362994?k=6&m=623362994&s=612x612&w=0&h=l350NQvVUUsLkRD1jOeEDnUledIWPjFXi86jd_Uv0OE=.jpg",
+      "lab": "Tomato___Bacterial_spot/96e66b34-f4b6-40d7-9459-53fd4da64a9f___GCREC_Bact.Sp 5793.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6229,
+      "same_class": false
+    },
+    {
+      "field": "test/Blueberry leaf/stock-photo-green-blueberry-leaf-isolated-with-clipping-path-550344304.jpg",
+      "lab": "Raspberry___healthy/60b355c2-b031-49e3-bc98-dc5d6bd3f6b1___Mary_HL 9288.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.6135,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato mold leaf/HighTunnel_TLM5.jpg",
+      "lab": "Tomato___Late_blight/3db1a347-001b-4170-8f64-4fa097f83bc7___GHLB_PS Leaf 1.2 Day 8.jpg",
+      "hamming": 6,
+      "pixel_corr": 0.6072,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf/17371378-tomato-leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/451819a3-0ec8-4716-bf0e-76fdb6c2353d___YLCV_NREC 2542.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5998,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/depositphotos_50812601-stock-photo-peach-leaf-isolated-on-white.jpg",
+      "lab": "Tomato___Leaf_Mold/f2b42380-d2e4-4335-8e49-43cef9e4d357___Crnl_L.Mold 7068.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.59,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/depositphotos_55202179-stock-photo-green-apple-with-leaf-and.jpg",
+      "lab": "Tomato___Bacterial_spot/b913f1de-86ed-447d-bb74-9310460de8a9___GCREC_Bact.Sp 3149.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5883,
+      "same_class": false
+    },
+    {
+      "field": "train/Cherry leaf/Leaf%20cherry1.JPG.jpg",
+      "lab": "Peach___Bacterial_spot/2b7b701a-8e42-4112-9aef-681857760c43___Rut._Bact.S 1231.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5733,
+      "same_class": false
+    },
+    {
+      "field": "train/Soyabean leaf/Soybean%20oil%20leaf2.JPG.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/2b8514e1-b8d7-4c8b-b557-c3e48b8e1b65___YLCV_NREC 0296.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5708,
+      "same_class": false
+    },
+    {
+      "field": "test/Bell_pepper leaf/4825902504_5fa80b65b8_z.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2119.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5683,
+      "same_class": false
+    },
+    {
+      "field": "train/Blueberry leaf/blueberry-group-leaves-on-white-background-db8p44.jpg",
+      "lab": "Tomato___Bacterial_spot/9886ea69-5a4e-4fa4-9e41-e9f65884ba9e___GCREC_Bact.Sp 3199.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5637,
+      "same_class": false
+    },
+    {
+      "field": "train/Blueberry leaf/blueberry-fruit-leaf-closeup-isolated-white-58260795.jpg",
+      "lab": "Cherry_(including_sour)___Powdery_mildew/fae0ccf9-efd8-47c2-af4d-77a13740e172___FREC_Pwd.M 4779.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5559,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/depositphotos_9274005-stock-photo-strawberry-leaf.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/c30eff89-329e-47d9-b010-0947ddc5d423___YLCV_NREC 2919.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5531,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/corn-bacterial-leaf-streak-zoomed.jpg",
+      "lab": "Blueberry___healthy/ee1579af-b5b4-49a9-858d-4af55c71b7d6___RS_HL 2326.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5363,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf early blight/500px-Tomato_Early_Blight_Leaf.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2500.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5345,
+      "same_class": false
+    },
+    {
+      "field": "train/Cherry leaf/2febe52cfac784c3191c804390d51ab756a3a7c8b9314_1260x1260.jpg",
+      "lab": "Tomato___Septoria_leaf_spot/c71f6f75-6b0c-4c70-9d94-efae4cca1010___JR_Sept.L.S 8488.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5256,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/green-apple-leaf-white-background-33503979.jpg",
+      "lab": "Blueberry___healthy/80810ba7-7da3-438a-be02-9c0b932292ed___RS_HL 0320.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5227,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn Gray leaf spot/rsz0803Figure5.jpg",
+      "lab": "Peach___Bacterial_spot/d9dc64d7-43ff-40d9-93ff-fcec68cfc25f___Rut._Bact.S 0771.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5153,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/stock-photo-strawberry-leaf-isolated-on-the-white-background-255533380.jpg",
+      "lab": "Potato___Late_blight/d105e6d5-4268-4b21-8709-24b894196454___RS_LB 3282.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.5142,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf/single-a-green-leaf-of-tomato-picture-id496662675?k=6&m=496662675&s=612x612&w=0&h=6zKfv022H_9cLQSIR_kpcOAlTeg1eIVtLBbc80PQA7Y=.jpg",
+      "lab": "Strawberry___Leaf_scorch/3cefe53f-b1ff-4d34-9ecb-825f260e720d___RS_L.Scorch 1436.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4997,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf/tomato-leaf-isolated-white-34309524.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/56fe6af0-1214-4771-8d15-8dbfa72cc4f5___YLCV_GCREC 2825.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4971,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn rust leaf/disease2.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1749.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4869,
+      "same_class": true
+    },
+    {
+      "field": "test/Corn rust leaf/80104747.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1582.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4835,
+      "same_class": true
+    },
+    {
+      "field": "train/Tomato leaf bacterial spot/TC6-300x194.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2008.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4812,
+      "same_class": false
+    },
+    {
+      "field": "train/Bell_pepper leaf/dscf1776.jpg",
+      "lab": "Tomato___Septoria_leaf_spot/b029df2d-8ca4-40e4-98d3-72432599d4a2___Matt.S_CG 6306.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4792,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf early blight/early-blight-alternaria-alternata-leaf-spotting-on-potato-leaf-ACG5WF.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1873.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4731,
+      "same_class": false
+    },
+    {
+      "field": "test/Cherry leaf/red-cherry-tree-leaf-isolated-crisp-white-background-35742030.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/a47783e5-db99-47e4-8ee2-d2a17308642b___YLCV_GCREC 1954.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4564,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/Tom_Sept4.jpg",
+      "lab": "Tomato___Spider_mites Two-spotted_spider_mite/d82b4325-1b29-4378-92b8-8440c8bd1f00___Com.G_SpM_FL 8598.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4525,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-red-apple-with-leaves-isolated-on-white-99003845.jpg",
+      "lab": "Tomato___Bacterial_spot/b913f1de-86ed-447d-bb74-9310460de8a9___GCREC_Bact.Sp 3149.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4497,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-leaf-isolated-on-white-background-195325289.jpg",
+      "lab": "Tomato___Bacterial_spot/79466870-1413-4b75-93e6-31b827cfa3ac___GCREC_Bact.Sp 6043.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4436,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/depositphotos_3121648-Strawberry-leaf.jpg",
+      "lab": "Tomato___Target_Spot/babed586-ddef-4d50-9e09-b5153eda0aaf___Com.G_TgS_FL 0051.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4252,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato mold leaf/dscn6690.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1603.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.424,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn rust leaf/southern-rust-close.jpg",
+      "lab": "Peach___Bacterial_spot/7f5cc176-51eb-4bba-a609-f5a1634754bf___Rutg._Bact.S 1932.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4173,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn leaf blight/CmyiAkUUIAAqSEa.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2571.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4043,
+      "same_class": false
+    },
+    {
+      "field": "train/Potato leaf early blight/Early-Blight-UK-A.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1657.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.4029,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato Septoria leaf spot/tomato-leaf-spot-septoria-lycopersici-on-a-tomato-leaflet-acg9j5.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2383.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3839,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-red-apple-with-green-leaf-isolated-on-white-background-with-clipping-path-327512429.jpg",
+      "lab": "Strawberry___Leaf_scorch/e51a5883-8774-419f-b155-c8c42dc4a93c___RS_L.Scorch 0825.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3753,
+      "same_class": false
+    },
+    {
+      "field": "test/Peach leaf/peach-leaf-10223898.jpg",
+      "lab": "Corn_(maize)___healthy/0b03beed-0247-4d38-87ba-eb5b94415312___R.S_HL 8233 copy 2.jpg",
+      "hamming": 6,
+      "pixel_corr": 0.3718,
+      "same_class": false
+    },
+    {
+      "field": "train/Soyabean leaf/stock-photo-fresh-soy-leaves-isolated-on-white-93841699.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/8abdbac6-0685-400e-94bd-436f1424dcca___YLCV_NREC 2957.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3657,
+      "same_class": false
+    },
+    {
+      "field": "train/Peach leaf/stock-photo-peach-fruits-with-leaf-isolated-on-white-background-639972919.jpg",
+      "lab": "Blueberry___healthy/da3219a3-b0ec-43fb-ad2e-eedd7d11e212___RS_HL 5015.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3531,
+      "same_class": false
+    },
+    {
+      "field": "train/grape leaf/img_0389.jpg",
+      "lab": "Soybean___healthy/1d8e06d6-b1fd-481e-82c3-bf3762657779___RS_HL 6999.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3459,
+      "same_class": false
+    },
+    {
+      "field": "train/Blueberry leaf/blueberry-leaf-isolated-white-background-clipping-path-87355538.jpg",
+      "lab": "Tomato___Early_blight/2245fdf5-3ff5-4624-9797-0b65bcc6cf73___RS_Erly.B 6358.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3438,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple Scab Leaf/AppleScab.JPG.jpg",
+      "lab": "Blueberry___healthy/bbb5f4ac-9750-4052-854c-13ae9c892c8a___RS_HL 0507.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.325,
+      "same_class": false
+    },
+    {
+      "field": "train/Soyabean leaf/IMG_4780.jpg",
+      "lab": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/3fe8c453-2a36-4d25-abc4-83170b43642f___YLCV_GCREC 2879.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.3089,
+      "same_class": false
+    },
+    {
+      "field": "train/Bell_pepper leaf spot/figure1.jpg",
+      "lab": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/c517891d-1411-4f7a-8d34-286ff2a7571f___RS_GLSp 4404.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.283,
+      "same_class": false
+    },
+    {
+      "field": "train/Apple leaf/stock-photo-red-apple-with-leaf-124592107.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/5653a459-f7bf-4c20-998f-698e8c6c9121___CREC_HLB 4383.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.2783,
+      "same_class": false
+    },
+    {
+      "field": "train/Strawberry leaf/green-strawberry-leaf-isolated-on-white-picture-id692328988?k=6&m=692328988&s=612x612&w=0&h=604VCrDe3mbN0c6LZZSBBvm4iMdWh1wcb3KHDX6CVRE=.jpg",
+      "lab": "Peach___Bacterial_spot/ef7fe4d8-a170-472f-abf3-c6ce3c3be15d___Rut._Bact.S 1276.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.2591,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato mold leaf/Leaf+mold+tomato+%25283%2529.JPG.jpg",
+      "lab": "Orange___Haunglongbing_(Citrus_greening)/87880f70-3b48-40ff-95d2-22935888af90___UF.Citrus_HLB_Lab 1131.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.2449,
+      "same_class": false
+    },
+    {
+      "field": "test/Cherry leaf/e52bbb9a08ede2948ba0c006f02fe7b053ad7831d1df6_1260x1260.jpg",
+      "lab": "Strawberry___Leaf_scorch/e51a5883-8774-419f-b155-c8c42dc4a93c___RS_L.Scorch 0825.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.2427,
+      "same_class": false
+    },
+    {
+      "field": "train/Tomato leaf mosaic virus/wd0phb4.jpg",
+      "lab": "Corn_(maize)___Northern_Leaf_Blight/162b2f34-0fa5-49ca-8996-ef495e8ef6c6___RS_NLB 3484.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.2403,
+      "same_class": false
+    },
+    {
+      "field": "train/Raspberry leaf/muscari-raspberry-leaf-isolated-white-background-31953078.jpg",
+      "lab": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot/ae1f25a2-402d-4ada-822f-43f0967a566a___RS_GLSp 4324.JPG",
+      "hamming": 6,
+      "pixel_corr": 0.1604,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn Gray leaf spot/Gray-leaf-spot.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 1814.JPG",
+      "hamming": 6,
+      "pixel_corr": -0.0874,
+      "same_class": false
+    },
+    {
+      "field": "train/Corn rust leaf/imag4090.jpg",
+      "lab": "Corn_(maize)___Common_rust_/RS_Rust 2451.JPG",
+      "hamming": 6,
+      "pixel_corr": -0.1872,
+      "same_class": true
+    }
+  ]
+}
