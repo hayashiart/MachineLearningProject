@@ -19,3 +19,7 @@ __pycache__/
 untung/results/mobilenetv3_mps_full/
 untung/results/*/history.json
 untung/results/*/curves.png
+untung/results/*/results.json
+untung/results/*/report.txt
+untung/results/*/confusion_matrix.png
+untung/results/*/train_summary.json
